@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Time">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome - для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Наш CSS - кастомные стили -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Travel Time</title>
+    <style>
+        body {
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        .light-theme {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .dark-theme {
+
+            .footer,
+            .top-bar,
+            main {
+                background-color: #333333;
+                color: #ffffff;
+
+                a {
+                    color: inherit;
+                }
+            }
+
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ШАПКА -->
+    <header class="top-bar">
+        <div class="top-logo">
+            <a href="index.html"><img src="images/logo.png" alt="Лого компании"></a>
+        </div>
+        <div class="top-slogan">Путешествуй во времени... вместе с Travel Time!</div>
+        <div class="top-phone">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+79871234567">+7 (987) 123-45-67</a>
+        </div>
+    </header>
+    <!-- МЕНЮ -->
+    <nav class="menu-wrapper">
+        <button class="menu-icon"><i class="fas fa-bars"></i></button>
+        <ul class="menu-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html" class="active">О нас</a></li>
+            <li><a href="tours.html">Туры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <!-- КОНТЕНТ -->
+    <main class="main-content">
+        <h1>О нас</h1>
+        <p>Компания Travel Time — это туристическое агентство, основанное друзьями Сергеем и Анной, чья главная цель —
+            сделать путешествия особенными и запоминающимися. Агентство отличается индивидуальным подходом к каждому
+            клиенту, предлагая уникальные маршруты и впечатления, адаптированные под желания и потребности туристов.</p>
+        <h2>Основные принципы работы Travel Time:</h2>
+        <ul class="principles">
+            <li><strong>Индивидуальность:</strong> Каждое путешествие создается специально для вас, учитывая ваши
+                пожелания и предпочтения.</li>
+            <li><strong>Качество обслуживания:</strong> От планирования маршрута до завершения поездки, команда
+                заботится о комфорте и удобстве клиентов.</li>
+            <li><strong>Эксклюзивность:</strong> Предлагаются нестандартные маршруты и экскурсии, созданные
+                профессионалами агентства.</li>
+            <li><strong>Опыт сотрудников:</strong> Команда состоит из опытных гидов и организаторов, знающих особенности
+                каждого региона и умеющих превратить поездку в настоящее приключение.</li>
+        </ul>
+        <p>Цель Travel Time — вдохновить людей на путешествия, показать красоту мира и подарить яркие эмоции, которые
+            останутся в памяти навсегда.</p>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Очень понравилось обслуживание и внимание к деталям. Всегда предлагают
+                            интересные маршруты и помогают выбрать лучшие варианты размещения. Путешествие прошло
+                            идеально, ни разу не было проблем с перелетом или проживанием. Буду рекомендовать друзьям и
+                            коллегам.
+                        </p>
+                        <div class="review__author">
+                            <img src="images/photo1.png" alt="" class="review__photo">
+                            <span class="review__name">Ирина</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Организация поездок отличная, гиды профессиональные, программа
+                            насыщенная. Особенно понравились экскурсии по Европе — впечатления незабываемые. Советую
+                            всем, кто хочет увидеть мир комфортно и интересно.
+                        </p>
+                        <div class="review__author">
+                            <img src="images/photo2.png" alt="" class="review__photo">
+                            <span class="review__name">Ренат</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Компания хорошая, но иногда бывают мелкие неудобства. Например, однажды
+                            забронировали отель, который оказался далеко от центра города. Но в целом всё нормально,
+                            цены адекватные, сотрудники вежливые.
+                        </p>
+                        <div class="review__author">
+                            <img src="images/photo3.png" alt="" class="review__photo">
+                            <span class="review__name">Игорь</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Лайтбокс - для всех картинок -->
+        <div class="lightbox" id="lightbox">
+            <span class="close-btn" onclick="closeLightBox()">x</span>
+            <img id="lightBoxImage" title="Увеличенное фото" alt="Увеличенное фото">
+        </div>
+        </div>
+    </main>
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Контакты</h3>
+            <p><i class="fas fa-phone"></i>&nbsp;<a href="tel:+79871234567">+7 (987) 123-45-67</a></p>
+            <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:info@mysite.ru">info@travet-time.ru</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Мы в соцсетях</h3>
+            <p>
+                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Travel Time</h3>
+            <p>Мы стремимся сделать путешествия простыми, удобными и доступными для каждого, предлагая качественные
+                туристические услуги и создавая незабываемые впечатления.</p>
+        </div>
+        <button class="theme-switcher" onclick="toggleTheme()"><img src="images/icons8-день-и-ночь-50.png"
+                alt="светлая-темная тема"></button>
+    </footer>
+     <button id="topBtn" onclick="scrollToTop()">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/gotop.js"></script>
+    <script src="js/bmenu.js"></script>
+    <script src="js/lbox.js"></script>
+    <script src="js/light-dark.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Time">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome - для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Наш CSS - кастомные стили -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Travel Time</title>
+    <style>
+        body {
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        .light-theme {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .dark-theme {
+
+            .footer,
+            .top-bar,
+            main {
+                background-color: #333333;
+                color: #ffffff;
+
+                a {
+                    color: inherit;
+                }
+            }
+
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ШАПКА -->
+    <header class="top-bar">
+        <div class="top-logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="top-slogan">Путешествуй во времени... вместе с Travel Time!</div>
+        <div class="top-phone">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+79871234567">+7 (987) 123-45-67</a>
+        </div>
+    </header>
+    <!-- МЕНЮ -->
+    <nav class="menu-wrapper">
+        <button class="menu-icon"><i class="fas fa-bars"></i></button>
+        <ul class="menu-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="tours.html">Туры</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+    </nav>
+    <!-- КОНТЕНТ -->
+    <main class="contacts">
+        <h1>Как нас найти</h1>
+        <div class="content-wrapper">
+            <div class="map-container">
+                <div style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.ru/maps/org/visa_travel/159278578296/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Visa&Travel</a><a
+                        href="https://yandex.ru/maps/2/saint-petersburg/category/visa_support/184106422/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Помощь в оформлении виз и
+                        загранпаспортов в Санкт‑Петербурге</a><a
+                        href="https://yandex.ru/maps/2/saint-petersburg/category/travel_agency/184106432/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:28px;">Турагентство в
+                        Санкт‑Петербурге</a><iframe
+                        src="https://yandex.ru/map-widget/v1/?display-text=%D0%A2%D1%83%D1%80%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE&ll=30.360290%2C59.934777&mode=search&oid=159278578296&ol=biz&sctx=ZAAAAAgBEAAaKAoSCTpY%2F%2BcwVz5AEc%2Fb2OxI%2BU1AEhIJTmTmApfH2j8RLqpFRDF5vz8iBgABAgMEBSgKOABA6K4HSAFqAnJ1nQHNzMw9oAEAqAEAvQHPTDzUwgGIAYGZucqfBdD4rdcGwI7%2B6wTO0If%2F%2BAa9o8Sh6QGz8dy%2FBMnWzpYE%2BPT4rdEE4%2B7AvgT75pToA6bBgdUEuoGLpZkF7ISvoASXhIqRrwSmp%2FSsBIL%2B9eo536%2Fp3egBpqnv4wOe96CMBOf8redE0PLz%2F8ACq%2FHN29kCxeWIxZMDuMrajfYDw7bg6gOCAhsoKGNhdGVnb3J5X2lkOigxODQxMDY0MzIpKSmKAgkxODQxMDY0MzKSAgCaAgxkZXNrdG9wLW1hcHOqAt4BNDAxMTE5ODU4NiwxODY5MTUwMzc0LDYyMzA1Njg2NCwyMzcxMjU3ODk1MjgsMjU2MzM4MTg1NCwzOTgyMTA1NjA1NCw0ODg0ODU1MzYzMywxMjY0NDg3MTA3LDYwMDI0ODAsNjAwMjk4NywyMjI3OTgwMzM4MiwyMzk1Mjc2Mzc5NywxNTgwMzc0MjQwNywxOTU5MzA4NDUwLDExNjU1ODE2ODE2Nyw2MjY4MzEzMTYwOCw2MDAyMTQzLDEyNzU3ODgyMjk2MiwxOTExOTIzNTg1LDk0NTQzNTI3MTY12gIoChIJ6qS%2BLO1cPkARPESIft%2F3TUASEgkAPj4hO2%2BjPxEAYO4h4XuPP%2BACAQ%3D%3D&sll=30.356171%2C59.934777&sspn=0.030041%2C0.008830&text=%7B%22text%22%3A%22%D0%A2%D1%83%D1%80%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE%22%2C%22what%22%3A%5B%7B%22attr_name%22%3A%22category_id%22%2C%22attr_values%22%3A%5B%22184106432%22%5D%7D%5D%7D&z=16"
+                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                        style="position:relative;"></iframe></div>
+            </div>
+            <div class="form-container">
+                <h2>Обратная связь</h2>
+                <form class="feedback">
+                    <label for="name">Имя: </label>
+                    <input type="text" placeholder="Ваше имя" id="name" name="name" required />
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" required />
+                    <label for="message">Ваше сообщение: </label>
+                    <textarea name="message" rows="5" id="message" required>Ваше сообщение</textarea>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Контакты</h3>
+            <p><i class="fas fa-phone"></i>&nbsp;<a href="tel:+79871234567">+7 (987) 123-45-67</a></p>
+            <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:info@mysite.ru">info@travet-time.ru</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Мы в соцсетях</h3>
+            <p>
+                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Travel Time</h3>
+            <p>Мы стремимся сделать путешествия простыми, удобными и доступными для каждого, предлагая качественные
+                туристические услуги и создавая незабываемые впечатления.</p>
+        </div>
+        <button class="theme-switcher" onclick="toggleTheme()"><img src="images/icons8-день-и-ночь-50.png"
+                alt="светлая-темная тема"></button>
+    </footer>
+    <button id="topBtn" onclick="scrollToTop()">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/gotop.js"></script>
+    <script src="js/bmenu.js"></script>
+    <script src="js/lbox.js"></script>
+    <script src="js/light-dark.js"></script>
+
+</body>
+
+</html>

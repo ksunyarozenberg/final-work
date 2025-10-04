@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Time">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome - для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Наш CSS - кастомные стили -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Travel Time</title>
+    <style>
+        body {
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        .light-theme {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .dark-theme {
+
+            .footer,
+            .top-bar,
+            main {
+                background-color: #333333;
+                color: #ffffff;
+
+                a {
+                    color: inherit;
+                }
+            }
+
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ШАПКА -->
+    <header class="top-bar">
+        <div class="top-logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="top-slogan">Путешествуй во времени... вместе с Travel Time!</div>
+        <div class="top-phone">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+79871234567">+7 (987) 123-45-67</a>
+        </div>
+    </header>
+    <!-- МЕНЮ -->
+    <nav class="menu-wrapper">
+        <button class="menu-icon"><i class="fas fa-bars"></i></button>
+        <ul class="menu-list">
+            <li><a href="index.html" >Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="tours.html" class="active">Туры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <!-- КОНТЕНТ -->
+   <main class="main-content">
+        <h1>Travel Time</h1>
+        <p>Давай отправимся в путешествие вместе с нами, и мы начнём новое приключение, полное счастья и смеха.</p>
+        <div class="card-grid">
+            <div class="card">
+                <img src="images/ims-land1.jpg" alt="Туры в Австрию" onclick="openLightBox('images/ims-land1.jpg')">
+                <div class="card-text">
+                    <h2>Туры в Австрию</h2>
+                    <p>Тур в Австрию — путешествие по живописным альпийским пейзажам, культурным столицам и уютным
+                        городкам. Вас ждут экскурсии по Вене, Зальцбургу, Инсбруку, знакомство с местной кухней,
+                        традициями и музыкой. Идеально подходит для любителей природы, культуры и активного отдыха.</p>
+                        <p>от 110 000 ₽</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/img-land2.jpg" alt="Услуга 2" onclick="openLightBox('images/img-land2.jpg')">
+                <div class="card-text">
+                    <h2>"Экскурсия на озеро Маджоре из Турина"</h2>
+                    <p>Однодневное путешествие по живописным берегам итальянского озера, посещение очаровательных
+                        городов Стреза и Верцаска, прогулка по островам Борромео с роскошными дворцами и садами.
+                        Отличный способ насладиться красотой северной Италии и итальянской культурой.</p>
+                        <p>от 120 000 ₽</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/img-land3.jpg" alt="Услуга 3" onclick="openLightBox('images/img-land3.jpg')">
+                <div class="card-text">
+                    <h2>Тур "Прага-Карловы вары-Дрезден"</h2>
+                    <p>Увлекательное путешествие по Чехии и Германии, включающее осмотр достопримечательностей Праги,
+                        отдых в Карловых Варах и знакомство с искусством и историей Дрездена. Прекрасная возможность
+                        погрузиться в атмосферу Центральной Европы и насладиться её красотами.</p>
+                        <p>от 80 000 ₽</p>
+                </div>
+            </div>
+            <!-- Лайтбокс - для всех картинок -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightBox()">x</span>
+        <img id="lightBoxImage" title="Увеличенное фото" alt="Увеличенное фото">
+    </div>
+    </div>
+        </main>
+    <br>
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Контакты</h3>
+            <p><i class="fas fa-phone"></i>&nbsp;<a href="tel:+79871234567">+7 (987) 123-45-67</a></p>
+            <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:info@mysite.ru">info@travet-time.ru</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Мы в соцсетях</h3>
+            <p>
+                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Travel Time</h3>
+            <p>Мы стремимся сделать путешествия простыми, удобными и доступными для каждого, предлагая качественные
+                туристические услуги и создавая незабываемые впечатления.</p>
+        </div>
+        <button class="theme-switcher" onclick="toggleTheme()"><img src="images/icons8-день-и-ночь-50.png"
+                alt="светлая-темная тема"></button>
+    </footer>
+     <button id="topBtn" onclick="scrollToTop()">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/gotop.js"></script>
+    <script src="js/bmenu.js"></script>
+    <script src="js/lbox.js"></script>
+    <script src="js/light-dark.js"></script>
+
+</body>
+
+</html>
